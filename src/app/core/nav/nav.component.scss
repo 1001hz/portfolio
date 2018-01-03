@@ -9,6 +9,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 2;
 
   &__wrapper {
     @include grid-wrap();
@@ -25,6 +26,7 @@
 
   &__menu {
     @include grid-item(2);
+    @include vertical-align();
   }
 
   &__menu-button {
@@ -48,7 +50,7 @@
   .nav{
 
     background-color: transparent;
-    color: $black;
+    color: $white;
 
     &__mobile {
       display: none;
@@ -63,7 +65,6 @@
       margin: 0;
       list-style: none;
       padding: 0;
-      @include vertical-align();
 
       @include grid-wrap();
       @include grid-row();
@@ -85,7 +86,7 @@
     &:before {
       content: '';
       background-color: $black;
-      opacity: 0.5;
+      opacity: 0.7;
       position: absolute;
       left: 0;
       top: 0;
