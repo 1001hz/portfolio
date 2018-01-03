@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { NavComponent } from './nav/nav.component';
 import { MaterialModule } from '../material/material.module';
 import { RouterModule } from '@angular/router';
+import { FooterSocialComponent } from './footer-social/footer-social.component';
+import { FooterContactComponent } from './footer-contact/footer-contact.component';
 
 @NgModule({
   imports: [
@@ -11,8 +13,10 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   exports: [
-    NavComponent
+    NavComponent,
+    FooterSocialComponent,
+    FooterContactComponent
   ],
-  declarations: [NavComponent]
+  declarations: [NavComponent, FooterSocialComponent, FooterContactComponent]
 })
 export class CoreModule { }

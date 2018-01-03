@@ -1,20 +1,20 @@
 <main class="landing">
 
   <div class="section landing__banner">
-    <section class="section__inner">
+    <section class="section__inner section__inner--banner">
 
       <div class="section__content section__content--valign">
 
         <div class="landing__avatar section__content--halign">
         </div>
 
-        <div class="landing__heading">
+        <div class="landing__heading-wrapper">
 
-          <h1>John Hughes</h1>
-          <h2>Web Developer</h2>
+          <h1 class="landing__heading landing__heading--one">John Hughes</h1>
+          <h2 class="landing__heading landing__heading--two">Web Developer</h2>
 
         </div>
-        
+
 
         <ul class="landing__social-icons">
           <li class="landing__social-icon">
@@ -39,5 +39,102 @@
 
     </section>
   </div>
+
+
+  <div class="section">
+
+    <section class="section__inner">
+
+      <div class="section__heading-wrapper">
+        <h2 class="section__heading landing__heading landing__heading--alt">Frontend CSS Work</h2>
+      </div>
+
+      <div class="landing__description">
+        <p>Most of the following examples were styled using the Bourbon framework built with either Gulp or Webpack. They are mostly custom WordPress themes and plugins.</p>
+      </div>
+
+
+      <div class="landing__item">
+        <a href="http://thebays.com.au/">
+          <img class="landing__image landing__image--website" src="/assets/websites/the-bays.png" alt="The Bays Website" />
+        </a>
+      </div>
+
+      <div class="landing__item">
+        <a href="http://conducthq.com/">
+          <img class="landing__image landing__image--website" src="/assets/websites/conduct.png" alt="Conduct Website" />
+        </a>
+      </div>
+
+      <div class="landing__item">
+        <a href="http://www.cleanaway.com.au/">
+          <img class="landing__image landing__image--website" src="/assets/websites/cleanaway.png" alt="Cleanaway Website" />
+        </a>
+      </div>
+
+      <div class="landing__item">
+        <a href="http://www.socialtraders.com.au/">
+          <img class="landing__image landing__image--website" src="/assets/websites/social-traders.png" alt="Social Traders Website" />
+        </a>
+      </div>
+
+
+    </section>
+  </div>
+
+  <div class="section section--primary">
+
+    <section class="section__inner">
+
+      <div class="section__heading-wrapper">
+        <h2 class="section__heading landing__heading">Angular Work</h2>
+      </div>
+
+      <div class="landing__description">
+        <p></p>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="section section--secondary">
+
+    <section class="section__inner">
+
+      <div class="section__heading-wrapper">
+        <h2 class="section__heading landing__heading">Projects</h2>
+      </div>
+
+      <div class="landing__description">
+        <p></p>
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <div class="section section--dark">
+
+    <section class="section__inner section__inner--auto">
+
+      <div class="landing__item landing__item--dark">
+
+        <app-footer-contact></app-footer-contact>
+
+      </div>
+
+      <div class="landing__item landing__item--dark">
+
+        <app-footer-social></app-footer-social>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
 
 </main>
