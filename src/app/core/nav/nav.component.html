@@ -1,0 +1,46 @@
+<div class="nav">
+
+  <div class="nav__wrapper nav__mobile">
+
+    <div class="nav__title">
+      John Hughes
+    </div>
+
+    <div class="nav__menu">
+
+      <button class="nav__menu-button" mat-icon-button [mat-menu-trigger-for]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+
+      <div class="nav__mat-menu">
+        <mat-menu x-position="before" #menu="matMenu">
+          <button [routerLink]="['angular']" routerLinkActive="active" mat-menu-item>Angular</button>
+          <button [routerLink]="['angular']" routerLinkActive="active" mat-menu-item>CSS</button>
+          <button [routerLink]="['angular']" routerLinkActive="active" mat-menu-item>Projects</button>
+        </mat-menu>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="nav__wrapper nav__desktop">
+
+    <div class="nav__title">
+      John Hughes
+    </div>
+
+    <ul class="nav__menu">
+      <li>
+        <a [routerLink]="['angular']" routerLinkActive="active">Angular</a>
+      </li>
+      <li>
+        <a [routerLink]="['angular']" routerLinkActive="active">CSS</a>
+      </li>
+      <li>
+        <a [routerLink]="['angular']" routerLinkActive="active">Projects</a>
+      </li>
+    </ul>
+
+  </div>
+
+</div>

@@ -1,0 +1,23 @@
+@import './grid';
+@import './mixins';
+
+.section {
+
+  &__inner {
+    @include grid-wrap();
+    @include grid-row();
+    min-height: 100vh;
+    height: 100vh;
+  }
+
+  &__content {
+
+    &--valign {
+      @include vertical-align();
+    }
+
+    &--halign {
+      @include horizontal-align();
+    }
+  }
+}

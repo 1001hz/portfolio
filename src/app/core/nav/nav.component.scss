@@ -1,0 +1,96 @@
+@import '../../../styles/index';
+
+.nav{
+
+  height: $nav-height;
+  background-color: $black;
+  color: $white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &__wrapper {
+    @include grid-wrap();
+    @include grid-row();
+    height: $nav-height;
+  }
+
+  &__title {
+    @include grid-item(2);
+    @include vertical-align();
+    padding-left: $gutter-width;
+    font-family: $font-heading;
+  }
+
+  &__menu {
+    @include grid-item(2);
+  }
+
+  &__menu-button {
+    float: right;
+  }
+
+  &__mat-menu {
+    //float: right;
+  }
+
+  &__desktop {
+    display: none;
+  }
+}
+
+@include tablet {
+
+}
+
+@include desktop {
+  .nav{
+
+    background-color: transparent;
+    color: $black;
+
+    &__mobile {
+      display: none;
+    }
+
+    &__desktop {
+      display: block;
+    }
+
+    &__menu {
+      position: relative;
+      margin: 0;
+      list-style: none;
+      padding: 0;
+      @include vertical-align();
+
+      @include grid-wrap();
+      @include grid-row();
+
+      li {
+        @include grid-item(3);
+
+        a {
+          font-family: $font-heading;
+          color: $white;
+          text-decoration: none;
+          font-weight: bold;
+        }
+      }
+
+
+    }
+
+    &:before {
+      content: '';
+      background-color: $black;
+      opacity: 0.5;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: $nav-height;
+    }
+  }
+}
