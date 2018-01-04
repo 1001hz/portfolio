@@ -72,11 +72,18 @@
       li {
         @include grid-item(3);
 
+        cursor: pointer;
+
         a {
           font-family: $font-heading;
           color: $white;
           text-decoration: none;
           font-weight: bold;
+
+          &:hover {
+            color: $secondary;
+            transition: color 0.3ms;
+          }
         }
       }
 
