@@ -232,7 +232,7 @@ var CoreModule = (function () {
 /***/ "../../../../../src/app/core/footer-contact/footer-contact.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"footer-contact\">\n\n  <ul>\n    <li>\n      John Hughes <br />\n      Carron<br />\n      Tipperary<br />\n      Ireland\n    </li>\n    <li>\n      <a href=\"tel:+353 87 69 9888\">+353 87 69 9888</a>\n    </li>\n    <li>\n      <a href=\"mailto:1001hz@gmail.com\">1001hz@gmail.com</a>\n    </li>\n  </ul>\n</div>\n"
+module.exports = "<div class=\"footer-contact\">\n\n  <ul>\n    <li>\n      John Hughes <br />\n      Carron<br />\n      Tipperary<br />\n      Ireland\n    </li>\n    <li>\n      <a href=\"tel:+353873699888\">+353 87 369 9888</a>\n    </li>\n    <li>\n      <a href=\"mailto:1001hz@gmail.com\">1001hz@gmail.com</a>\n    </li>\n  </ul>\n</div>\n"
 
 /***/ }),
 
