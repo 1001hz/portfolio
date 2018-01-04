@@ -46,10 +46,10 @@
   }
 
   &__avatar {
-    background-image:url(/assets/john-hughes.jpg);
+    background-image:url(/assets/john-hughes.png);
     background-size:cover;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     border: solid 5px $white;
     border-radius: 100px;
   }
@@ -83,10 +83,33 @@
 
   &__item {
 
+    padding-bottom: $padding-large;
+
     &--dark {
       color: $off-white;
       font-family: $font-body;
       line-height: 1.2em;
+    }
+  }
+
+  &__item-heading {
+    color: $off-white;
+    font-family: $font-heading;
+    text-align: center;
+  }
+
+  &__item-description {
+    text-align: center;
+    font-family: $font-body;
+    line-height: 1.8em;
+    color: $grey;
+
+    a {
+      color: $off-white;
+    }
+
+    &--alt {
+      color: $white;
     }
   }
 
@@ -105,6 +128,33 @@
     font-family: $font-body;
     line-height: 1.8em;
     color: $grey;
+    padding-bottom: $padding-large;
+
+    a {
+      color: $off-white;
+    }
+
+    &--alt {
+      color: $white;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      font-family: $font-body;
+      color: $white;
+      margin-bottom: $padding-large;
+
+      span {
+        display: inline-block;
+        margin-left: $padding-small;
+        vertical-align: middle;
+      }
+    }
   }
 
 }
@@ -112,8 +162,18 @@
 @include desktop() {
 
   .landing {
+
     &__item {
       @include grid-item(2);
+    }
+
+    &__list {
+      @include grid-wrap();
+      @include grid-row();
+
+      li {
+        @include grid-item(3);
+      }
     }
   }
 }

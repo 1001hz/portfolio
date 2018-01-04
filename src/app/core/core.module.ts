@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ScrollToModule } from 'ng2-scroll-to-el';
+
 import { NavComponent } from './nav/nav.component';
 import { MaterialModule } from '../material/material.module';
 import { RouterModule } from '@angular/router';
@@ -10,7 +12,8 @@ import { FooterContactComponent } from './footer-contact/footer-contact.componen
   imports: [
     CommonModule,
     MaterialModule,
-    RouterModule
+    RouterModule,
+    ScrollToModule.forRoot()
   ],
   exports: [
     NavComponent,

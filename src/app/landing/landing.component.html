@@ -41,7 +41,7 @@
   </div>
 
 
-  <div class="section">
+  <div class="section" id="css">
 
     <section class="section__inner">
 
@@ -82,7 +82,7 @@
     </section>
   </div>
 
-  <div class="section section--primary">
+  <div class="section section--primary" id="angular">
 
     <section class="section__inner">
 
@@ -90,15 +90,52 @@
         <h2 class="section__heading landing__heading">Angular Work</h2>
       </div>
 
-      <div class="landing__description">
-        <p></p>
+      <div class="landing__description landing__description--alt">
+        <p>
+          I have been working with Angular from version 1.3 and up. Below are some of the projects I have worked on.
+          In fact this page is also an Angular 5 app. Feel free to check out the code at the <a href="https://github.com/1001hz/portfolio">Github repo</a>.
+        </p>
+      </div>
+
+      <div class="landing__item">
+        <h3 class="landing__item-heading">Portal App</h3>
+        <p class="landing__item-description landing__item-description--alt">
+          A portal application for users to access information from multiple systems.
+          The frontend was fed from a Redis cache to increase the application's speed.
+          The cache was populated from cron jobs nightly pulling data from multiple systems.
+        </p>
+      </div>
+
+      <div class="landing__item">
+        <h3 class="landing__item-heading">CMS App</h3>
+        <p class="landing__item-description landing__item-description--alt">
+          A CMS that controls information being pushed out to a native mobile app for in house training in a large company.
+          The CMS controlled user management, slot allocation, plus data that the native phone Android/IOS app would display.
+        </p>
+      </div>
+
+      <div class="landing__item">
+        <h3 class="landing__item-heading">User Allocation App</h3>
+        <p class="landing__item-description landing__item-description--alt">
+          An application for allocating users to homes based on certain criteria.
+          Contains user management plus multiple roles and profiles. API data is fed from a Symfony2 backend with Postgres database.
+        </p>
+      </div>
+
+      <div class="landing__item">
+        <h3 class="landing__item-heading">Wedding Planner App</h3>
+        <p class="landing__item-description landing__item-description--alt">
+          An Angular 5 application for users to manage their wedding. Built with Node and MongoDB backend.
+          Client side state is managed using ngrx store and ngrx effects.
+          This is a personal project and is currently in development. Feel free to have a look at the <a href="https://github.com/1001hz/eros">Github repo</a>
+        </p>
       </div>
 
     </section>
 
   </div>
 
-  <div class="section section--secondary">
+  <div class="section section--secondary" id="projects">
 
     <section class="section__inner">
 
@@ -106,9 +143,54 @@
         <h2 class="section__heading landing__heading">Projects</h2>
       </div>
 
-      <div class="landing__description">
-        <p></p>
+      <div class="landing__description landing__description--alt">
+        <p>
+          I have worked on a large number of integration projects. These touch multiple enterprise applications and data stores including:
+        </p>
       </div>
+
+      <ul class="landing__list">
+        <li>
+          <span><mat-icon>web</mat-icon></span>
+          <span>Oracle RightNow CRM</span>
+        </li>
+        <li>
+          <span><mat-icon>storage</mat-icon></span>
+          <span>SAP</span>
+        </li>
+        <li>
+          <span><mat-icon>web</mat-icon></span>
+          <span>SharePoint</span>
+        </li>
+        <li>
+          <span><mat-icon>search</mat-icon></span>
+          <span>Funnelback Search Engine</span>
+        </li>
+        <li>
+          <span><mat-icon>web</mat-icon></span>
+          <span>Squiz Matrix CMS</span>
+        </li>
+        <li>
+          <span><mat-icon>web</mat-icon></span>
+          <span>Moodle LMS</span>
+        </li>
+        <li>
+          <span><mat-icon>storage</mat-icon></span>
+          <span>Redis</span>
+        </li>
+        <li>
+          <span><mat-icon>storage</mat-icon></span>
+          <span>SQL Server</span>
+        </li>
+        <li>
+          <span><mat-icon>storage</mat-icon></span>
+          <span>MySQL</span>
+        </li>
+        <li>
+          <span><mat-icon>storage</mat-icon></span>
+          <span>Postgres</span>
+        </li>
+      </ul>
 
     </section>
 
